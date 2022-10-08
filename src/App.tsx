@@ -1,11 +1,11 @@
-import React from 'react';
 import './App.css';
 
 import { Button, ThemeProvider } from './simpleUI';
+import { TextInput } from './simpleUI/TextInput';
 
 function App() {
   return (
-    <ThemeProvider theme={{}}>
+    <ThemeProvider>
       <div
         style={{
           display: 'flex',
@@ -17,6 +17,9 @@ function App() {
         }}
         className='App'
       >
+        <div>
+          <TextInput label='Okay' onChange={() => {}} value='' />
+        </div>
         <div>
           <h1>COLORS</h1>
           <Button color='primary'>PRIMARY</Button>
